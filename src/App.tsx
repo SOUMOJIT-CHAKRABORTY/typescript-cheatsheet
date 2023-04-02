@@ -1,6 +1,5 @@
 import { ReactElement, ReactNode, useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import UseStateComponent from "./useStateComponent";
 import "./App.css";
 
 // old way to define Funcational Component -->
@@ -91,6 +90,7 @@ function App() {
         items={["Boto", "Soumojit", "patul"]}
         render={(item: string) => <div>{item.toUpperCase()}</div>}
       />
+      <UseStateComponent />
     </div>
   );
 }
