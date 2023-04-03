@@ -1,6 +1,7 @@
 import { ReactElement, ReactNode, useState } from "react";
 import UseStateComponent from "./useStateComponent";
 import "./App.css";
+import UseEffectComponent from "./UseEffectComponent";
 
 // old way to define Funcational Component -->
 const HeadingFc: React.FC<{ title: string }> = ({ title }) => <h1>{title}</h1>;
@@ -90,7 +91,10 @@ function App() {
         items={["Boto", "Soumojit", "patul"]}
         render={(item: string) => <div>{item.toUpperCase()}</div>}
       />
+      <h1>UseState</h1>
       <UseStateComponent />
+      <h1>UseEffect</h1>
+      <UseEffectComponent />
     </div>
   );
 }
