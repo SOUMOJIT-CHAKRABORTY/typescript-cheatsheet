@@ -2,6 +2,7 @@ import { ReactElement, ReactNode, useState } from "react";
 import UseStateComponent from "./useStateComponent";
 import "./App.css";
 import UseEffectComponent from "./UseEffectComponent";
+import UseContextComponent from "./UseContextComponent";
 
 // old way to define Funcational Component -->
 const HeadingFc: React.FC<{ title: string }> = ({ title }) => <h1>{title}</h1>;
@@ -95,6 +96,7 @@ function App() {
       <UseStateComponent />
       <h1>UseEffect</h1>
       <UseEffectComponent />
+      <UseContextComponent />
     </div>
   );
 }
